@@ -1,0 +1,19 @@
+﻿'Script was created by AMATECHX from https://www.youtube.com/channel/UCoAeq8datWeMd3FABrmYhEg'
+'Visit the link above for more info, for more scripts and if you want to contact the creator'
+VERSION BUILD=8300326 RECORDER=FX
+SET !ERRORIGNORE YES
+SET !TIMEOUT_PAGE 15
+SET !VAR1 EVAL("var min = 2; var max = 3; var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min; randomNumber;")
+SET !VAR2 EVAL("var min = 4; var max = 5; var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min; randomNumber;")
+SET !VAR3 EVAL("var min = 13; var max = 14; var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min; randomNumber;")
+TAB T=1
+URL GOTO=https://addmefast.com/free_points/tiktok_followers
+WAIT SECONDS={{!VAR1}}
+TAG POS=1 TYPE=DIV ATTR=TXT:Follow
+WAIT SECONDS={{!VAR2}}
+TAB T=2
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Follow
+WAIT SECONDS={{!VAR2}}
+TAB CLOSE
+WAIT SECONDS={{!VAR2}}
+TAB T=1
